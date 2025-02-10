@@ -2,7 +2,7 @@
 module "firewall_policy" {
 
   source                                        = "Azure/avm-res-network-firewallpolicy/azurerm"
-  version                                       = "0.3.2"
+  version                                       = "0.3.3"
   count                                         = var.create_firewall_policy ? 1 : 0
   enable_telemetry                              = var.enable_telemetry
   name                                          = var.naming_map.firewall_policy.name
