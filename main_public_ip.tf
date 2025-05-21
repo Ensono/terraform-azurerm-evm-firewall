@@ -3,7 +3,7 @@
 module "public_ip_address" {
 
   source  = "Azure/avm-res-network-publicipaddress/azurerm"
-  version = "0.1.2"
+  version = "0.2.0"
 
   resource_group_name = var.resource_group_name
   name                = var.naming_map.public_ip.name
